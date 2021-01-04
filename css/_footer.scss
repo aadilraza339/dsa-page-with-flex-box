@@ -38,7 +38,10 @@
         justify-content: space-between;
     }
     .one {
-        width: 700px;
+        width: 700px !important;
+        @media #{$Desktop-width}{
+            max-width: 80px !important;
+        }
     }
     .second {
         width: 338px;
@@ -50,7 +53,8 @@
     }
     .one, 
     .second
-    {
+    {   
+        padding-top: 30px;
         margin-top: 20px;
         @media #{$Desktop-width}{
             margin-top: 0px;
@@ -58,6 +62,7 @@
     }
     .padding-b {
         padding-bottom: 40px;
+        justify-content: space-between;
     }
 }
 .center {

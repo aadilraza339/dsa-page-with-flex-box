@@ -1,7 +1,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu', sans-serif;
   padding: 0%;
   list-style: none;
   margin: 0;
@@ -53,12 +53,12 @@
   margin-right: 10px;
 }
 
-.login, button {
+.login, .new-user {
   margin-right: 25px;
   padding: 7px 0px 7px 0px;
 }
 
-.r-align button {
+.r-align .new-user {
   border: 1px solid #ff5912;
   border-radius: 5px;
   padding: 6px 18px 7px 26px;
@@ -66,7 +66,7 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .r-align button {
+  .r-align .new-user {
     margin-right: 0px;
   }
 }
@@ -175,12 +175,12 @@
   margin-right: 10px;
 }
 
-.login, button {
+.login, .new-user {
   margin-right: 25px;
   padding: 7px 0px 7px 0px;
 }
 
-.r-align button {
+.r-align .new-user {
   border: 1px solid #ff5912;
   border-radius: 5px;
   padding: 6px 18px 7px 26px;
@@ -188,7 +188,7 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .r-align button {
+  .r-align .new-user {
     margin-right: 0px;
   }
 }
@@ -277,6 +277,7 @@
   font-weight: 400;
   letter-spacing: 0.72px;
   line-height: 36px;
+  padding-top: 15px;
 }
 
 .banner-button {
@@ -347,12 +348,12 @@
   margin-right: 10px;
 }
 
-.login, button {
+.login, .new-user {
   margin-right: 25px;
   padding: 7px 0px 7px 0px;
 }
 
-.r-align button {
+.r-align .new-user {
   border: 1px solid #ff5912;
   border-radius: 5px;
   padding: 6px 18px 7px 26px;
@@ -360,7 +361,7 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .r-align button {
+  .r-align .new-user {
     margin-right: 0px;
   }
 }
@@ -449,9 +450,28 @@
   padding-right: 40px;
 }
 
+@media only screen and (max-width: 480px) {
+  .registration .data span {
+    font-size: 14px;
+    padding-right: 0px;
+  }
+}
+
 .registration .l-align, .registration .r-align {
   padding-top: 15px;
   padding-bottom: 12px;
+}
+
+@media only screen and (max-width: 480px) {
+  .registration .l-align, .registration .r-align {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .date-ar::after {
@@ -464,6 +484,12 @@
   margin-left: 38px;
   margin-top: -3px;
   display: inline-block;
+}
+
+@media only screen and (max-width: 480px) {
+  .date-ar::after {
+    display: none;
+  }
 }
 
 .dsa-certi {
@@ -534,12 +560,12 @@
   margin-right: 10px;
 }
 
-.login, button {
+.login, .new-user {
   margin-right: 25px;
   padding: 7px 0px 7px 0px;
 }
 
-.r-align button {
+.r-align .new-user {
   border: 1px solid #ff5912;
   border-radius: 5px;
   padding: 6px 18px 7px 26px;
@@ -547,7 +573,7 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .r-align button {
+  .r-align .new-user {
     margin-right: 0px;
   }
 }
@@ -645,15 +671,22 @@
 
 @media only screen and (max-width: 480px) {
   .enrol ul {
-    width: 395px;
+    width: 308px;
+    font-size: 14px;
+    margin-left: initial;
   }
 }
 
 .enrol .heading {
-  text-align: start;
   padding-left: 20px;
   font-size: 40px;
   padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+  .enrol .heading {
+    text-align: start;
+  }
 }
 
 .enrol .pera {
@@ -670,6 +703,12 @@
   font-weight: 400;
   letter-spacing: 0.6px;
   line-height: 36px;
+}
+
+@media only screen and (max-width: 480px) {
+  .enrol {
+    padding-bottom: 38px;
+  }
 }
 
 .row {
@@ -690,6 +729,12 @@
   line-height: 36px;
 }
 
+@media only screen and (max-width: 480px) {
+  .row .l-align {
+    width: 100%;
+  }
+}
+
 .row .r-align {
   width: 60%;
 }
@@ -702,9 +747,72 @@
   line-height: 30px;
 }
 
+@media only screen and (max-width: 480px) {
+  .row .r-align .p1 {
+    padding-top: 10px;
+  }
+}
+
 .row .r-align .yellow-card {
-  background-repeat: no-repeat;
-  background: url("../images/levels/text-box-pc.svg");
+  position: relative;
+}
+
+.row .r-align .yellow-card .price-Container {
+  position: absolute;
+  top: 25px;
+  left: 92px;
+  font-size: 22px;
+  letter-spacing: 0.66px;
+  color: #2f2f2f;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 480px) {
+  .row .r-align .yellow-card .price-Container {
+    top: 76px;
+    left: 31px;
+  }
+}
+
+.row .r-align .yellow-card .price-Container .m-b {
+  margin-bottom: 15px;
+}
+
+.row .r-align .yellow-card .price-Container .m-t {
+  margin-top: 15px;
+}
+
+.row .r-align .yellow-card .price-Container .Avail {
+  display: block;
+}
+
+.row .r-align .yellow-card .price-Container .rs-2 {
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .row .r-align .yellow-card {
+    top: 30px;
+  }
+}
+
+.row .r-align .strike-cut:before {
+  content: '';
+  left: -2px;
+  top: 20px;
+  bottom: 19px;
+  width: 111%;
+  background: -webkit-gradient(linear, right bottom, left top, color-stop(47.5%, transparent), color-stop(52.5%, currentColor), color-stop(55.5%, currentColor), color-stop(42.5%, transparent));
+  background: linear-gradient(to left top, transparent 47.5%, currentColor 52.5%, currentColor 55.5%, transparent 42.5%);
+}
+
+@media only screen and (max-width: 480px) {
+  .row .r-align {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
 }
 
 p.red-p {
@@ -716,6 +824,12 @@ p.red-p {
   padding-bottom: 40px;
 }
 
+@media only screen and (max-width: 480px) {
+  p.red-p {
+    padding-bottom: 2px;
+  }
+}
+
 .padding-top {
   margin-top: 26px;
 }
@@ -724,13 +838,13 @@ p.red-p {
   width: 34.5% !important;
 }
 
-.dis-p {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 336px;
+@media only screen and (max-width: 480px) {
+  .allow-card {
+    width: 41.5% !important;
+  }
 }
 
-.levels-button {
+.price-Container {
   margin-left: auto;
   margin-right: auto;
   max-width: 336px;
@@ -812,6 +926,12 @@ p.red-p {
   width: 19%;
 }
 
+@media only screen and (max-width: 480px) {
+  .card-box .cc-photo {
+    width: 23%;
+  }
+}
+
 .card-box .quote {
   margin-top: 40px;
   margin-left: 30px;
@@ -820,12 +940,8 @@ p.red-p {
 @media only screen and (max-width: 480px) {
   .card-box .quote {
     margin-left: 0px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .card-box {
-    width: 88%;
+    position: relative;
+    right: 29px;
   }
 }
 
@@ -865,6 +981,7 @@ p.red-p {
     left: -34px;
     width: auto;
     position: relative;
+    margin-top: 265px;
   }
 }
 
@@ -885,8 +1002,11 @@ p.red-p {
 
 @media only screen and (max-width: 480px) {
   .right-cont .content-ccdsa {
-    font-size: 16px;
-    margin-right: 0px;
+    font-size: 13px;
+    right: 48px;
+    position: relative;
+    margin-right: -99px;
+    padding-right: 57px;
   }
 }
 
@@ -899,7 +1019,8 @@ p.red-p {
 
 @media only screen and (max-width: 480px) {
   .right-cont {
-    width: 329px;
+    width: 100%;
+    margin: 38px 2px 50px 34px;
   }
 }
 
@@ -1033,7 +1154,13 @@ p.red-p {
 }
 
 .footer .one {
-  width: 700px;
+  width: 700px !important;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer .one {
+    max-width: 80px !important;
+  }
 }
 
 .footer .second {
@@ -1050,6 +1177,7 @@ p.red-p {
 
 .footer .one,
 .footer .second {
+  padding-top: 30px;
   margin-top: 20px;
 }
 
@@ -1062,6 +1190,9 @@ p.red-p {
 
 .footer .padding-b {
   padding-bottom: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .center {

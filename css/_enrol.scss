@@ -17,14 +17,18 @@
             
         }
         @media #{$Desktop-width}{
-            width: 395px;
+            width: 308px;
+            font-size: 14px;
+            margin-left: initial;
         }
     }
     .heading {
-        text-align: start;
         padding-left: 20px;
         font-size: 40px;
         padding-bottom: 30px;
+        @media #{$Desktop-width}{
+           text-align: start;
+        }
     }
     .pera {
         max-width: 865px;
@@ -41,7 +45,9 @@
         }
         
     }
-   
+    @media #{$Desktop-width}{
+        padding-bottom: 38px;
+    }
 }
 
 .row {
@@ -55,6 +61,9 @@
             letter-spacing: 0.6px;
             line-height: 36px;
         }
+        @media #{$Desktop-width}{
+            width: 100%;
+        }
     }
     .r-align {
         width: 60%;
@@ -64,10 +73,55 @@
             font-weight: 400;
             letter-spacing: 0.6px;
             line-height: 30px;
+            @media #{$Desktop-width}{
+                padding-top: 10px;
+            }
         }
         .yellow-card {
-            background-repeat: no-repeat;
-            background: url('../images/levels/text-box-pc.svg');
+            position: relative;
+            .price-Container {
+                position: absolute;
+                top: 25px;
+                left: 92px;
+                font-size: 22px;
+                letter-spacing: 0.66px;
+                color: #2f2f2f;
+                font-weight: 300;
+                @media #{$Desktop-width}{
+                    top: 76px;
+                    left: 31px;
+                }
+                .m-b {
+                    margin-bottom: 15px;
+                }
+                .m-t {
+                    margin-top: 15px;
+                }
+                .Avail {
+                    display: block;
+                }
+                .rs-2 {
+                    margin-right: 20px;
+                }
+            }
+            @media #{$Desktop-width}{
+                top: 30px;
+            }
+        }
+        
+        .strike-cut:before {
+            content: '';
+            left: -2px;
+            top: 20px;
+            bottom: 19px;
+            width: 111%;
+            background: linear-gradient(to left top, transparent 47.5%, currentColor 52.5%, currentColor 55.5%, transparent 42.5%);
+        }
+
+
+        @media #{$Desktop-width}{
+            width: 100%;
+            justify-content: start;
         }
     }
 }
@@ -79,6 +133,9 @@ p.red-p {
     letter-spacing: 0.6px;
     line-height: 36px;
     padding-bottom: 40px;
+    @media #{$Desktop-width}{
+        padding-bottom: 2px;
+    }
 }
 
 .padding-top {
@@ -87,13 +144,12 @@ p.red-p {
 
 .allow-card {
     width: 34.5% !important;
+    @media #{$Desktop-width}{
+        width: 41.5% !important;
+    }
 }
 
-.dis-p {
-    @include width(336px);
-}
-
-.levels-button {
+.price-Container {
     @include width(336px);
 }
 
@@ -153,18 +209,19 @@ p.red-p {
     .cc-photo {
         background-color: #F2F2F2;
         width: 19%;
+        @media #{$Desktop-width}{
+            width: 23%;
+        }
     }
     .quote {
         margin-top: 40px;
         margin-left: 30px;
         @media #{$Desktop-width}{
             margin-left: 0px;
+            position: relative;
+            right: 29px;
         }
     }
-    @media #{$Desktop-width}{
-        width: 88%;
-    }
-
 }
 
 .left-card {
@@ -194,6 +251,7 @@ p.red-p {
         left: -34px;
         width: auto;
         position: relative;
+        margin-top: 265px;
     }
 }
 .right-cont {
@@ -210,8 +268,11 @@ p.red-p {
     } 
     .content-ccdsa {
         @media #{$Desktop-width}{
-            font-size: 16px;
-            margin-right: 0px;
+            font-size: 13px;
+            right: 48px;
+            position: relative;
+            margin-right: -99px;
+            padding-right: 57px;
         }
     }
     .found {
@@ -219,7 +280,8 @@ p.red-p {
         justify-content: space-between;
     }
     @media #{$Desktop-width}{
-        width: 329px;
+        width: 100%;
+        margin: 38px 2px 50px 34px;
     }  
 }
 

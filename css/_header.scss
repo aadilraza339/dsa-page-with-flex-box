@@ -26,6 +26,9 @@ $padding : 24px;
     }
     .l-align {
         @include padding-t-l(10px,10px);
+        @media #{$Desktop-width}{
+            width: 100%;
+        }
      }
     // @media #{$information-phone} {
     //     padding-left: 40px;
@@ -50,13 +53,22 @@ $padding : 24px;
 .login , button {
     margin-right: 25px;
     padding: 7px 0px 7px 0px;
+   
 }
 .r-align {
     button {
-            border: 1px solid #ff5912;
-            border-radius: 5px;
-            padding: 6px 18px 7px 26px;
-            background-color: white;
+        border: 1px solid #ff5912;
+        border-radius: 5px;
+        padding: 6px 18px 7px 26px;
+        background-color: white;
+        @media #{$Desktop-width}{
+            margin-right: 0px;
+        }
+    }
+    @media #{$Desktop-width}{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
     }
 }
 
@@ -68,6 +80,9 @@ $padding : 24px;
 }
 .logo-cont {
     display: flex;
+    @media #{$Desktop-width}{
+        justify-content: space-between;
+    }
 }
 
 .nav-menu {

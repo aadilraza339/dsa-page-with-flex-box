@@ -20,12 +20,19 @@
     margin-top: 2px;
     li {
         justify-content: space-between;
+        @media #{$Desktop-width}{
+            padding-bottom: 20px;
+        }
     }
     .footer-menu {
         padding-top: 50px;
         margin-right: auto;
         max-width: 543px;
         justify-content: space-between;
+        @media #{$Desktop-width}{
+            margin-left: auto;
+            max-width: 80px;
+        }
     }
     .justify {
         justify-content: space-between;
@@ -35,13 +42,24 @@
     }
     .second {
         width: 338px;
+        @media #{$Desktop-width}{
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 180px;
+        }
     }
     .one, 
     .second
     {
         margin-top: 20px;
+        @media #{$Desktop-width}{
+            margin-top: 0px;
+        }
     }
     .padding-b {
         padding-bottom: 40px;
     }
+}
+.center {
+    text-align: center;
 }

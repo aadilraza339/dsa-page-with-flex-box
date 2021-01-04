@@ -16,6 +16,15 @@
             @include under-line(#34404b,#ff5912);
             
         }
+        @media #{$Desktop-width}{
+            width: 395px;
+        }
+    }
+    .heading {
+        text-align: start;
+        padding-left: 20px;
+        font-size: 40px;
+        padding-bottom: 30px;
     }
     .pera {
         max-width: 865px;
@@ -55,6 +64,10 @@
             font-weight: 400;
             letter-spacing: 0.6px;
             line-height: 30px;
+        }
+        .yellow-card {
+            background-repeat: no-repeat;
+            background: url('../images/levels/text-box-pc.svg');
         }
     }
 }
@@ -111,6 +124,9 @@ p.red-p {
             margin-top: 174px;
         } 
     }
+    @media #{$Desktop-width}{
+        overflow: hidden;
+    }
 }
 
 @mixin card-Style {
@@ -141,7 +157,14 @@ p.red-p {
     .quote {
         margin-top: 40px;
         margin-left: 30px;
+        @media #{$Desktop-width}{
+            margin-left: 0px;
+        }
     }
+    @media #{$Desktop-width}{
+        width: 88%;
+    }
+
 }
 
 .left-card {
@@ -167,6 +190,11 @@ p.red-p {
     margin-top: 174px;
     margin-left: 50px;
     width: 70%;
+    @media #{$Desktop-width}{
+        left: -34px;
+        width: auto;
+        position: relative;
+    }
 }
 .right-cont {
     width: 557px;
@@ -180,9 +208,18 @@ p.red-p {
         font-weight: 300;
         padding-bottom: 20px;
     } 
+    .content-ccdsa {
+        @media #{$Desktop-width}{
+            font-size: 16px;
+            margin-right: 0px;
+        }
+    }
     .found {
         font-size: 20px;
         justify-content: space-between;
+    }
+    @media #{$Desktop-width}{
+        width: 329px;
     }  
 }
 

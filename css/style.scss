@@ -6,6 +6,7 @@
     margin: 0;
 }
 $information-phone: "only screen and (max-width : 1573px)";
+$Desktop-width: "only screen and (max-width : 480px)";
 @import 'header';
 @import 'dsa-intro';
 @import 'dsa-date';
@@ -15,15 +16,18 @@ $information-phone: "only screen and (max-width : 1573px)";
 @import 'footer';
 
 
-.yellow-card {
-    background: url('../images/levels/text-box-pc.svg');
-}
 
-.experience {
-    .left-card,.right-card {
-         @media  #{$information-phone}{
-        display: none;
-    }
-    }
+
+.display-non {
+        @media  #{$information-phone}{
+    display: none;
+}
+}
    
+
+.no-flex {
+    @media #{$Desktop-width}{
+        display: block;
+    }
+
 }

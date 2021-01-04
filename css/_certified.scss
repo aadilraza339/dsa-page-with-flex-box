@@ -4,6 +4,9 @@
     margin-right: auto;
     max-width: 1228px;
     margin-bottom: 130px;
+    @media #{$Desktop-width}{
+        max-width: 308px;
+    }
 }
 
 .card {

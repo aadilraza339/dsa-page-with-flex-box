@@ -1034,6 +1034,10 @@ p.red-p {
   background-color: #f4f6f8;
 }
 
+.yellow-card-m {
+  display: none;
+}
+
 .certified {
   margin-left: auto;
   margin-right: auto;

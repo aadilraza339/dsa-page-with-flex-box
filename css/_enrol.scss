@@ -1,0 +1,195 @@
+@import 'header';
+
+.enrol {
+   
+    padding-bottom: 100px;
+    ul {
+        color: #ff5912;
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        width: 500px;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        .under-line {
+            @include under-line(#34404b,#ff5912);
+            
+        }
+    }
+    .pera {
+        max-width: 865px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 49px;
+        padding-bottom: 40px;
+        > p {
+            color: #2f2f2f;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0.6px;
+            line-height: 36px;
+        }
+        
+    }
+   
+}
+
+.row {
+    display: flex;
+    .l-align {
+        width: 40%;
+        p {
+            color: #34404b;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            line-height: 36px;
+        }
+    }
+    .r-align {
+        width: 60%;
+        .p1 {
+            color: #34404b;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0.6px;
+            line-height: 30px;
+        }
+    }
+}
+
+p.red-p {
+    color: #ff5912;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    line-height: 36px;
+    padding-bottom: 40px;
+}
+
+.padding-top {
+    margin-top: 26px;
+}
+
+.allow-card {
+    width: 34.5% !important;
+}
+
+.dis-p {
+    @include width(336px);
+}
+
+.levels-button {
+    @include width(336px);
+}
+
+.lorem-t {
+    color: #2f2f2f;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.experience {
+    margin-top: 70px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    @include padding-t-l(10px,100px);
+    .cc-card {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        .arrow-l ,
+        .arrow-r 
+        {
+            margin-left: 90px;
+            margin-right: 90px;
+            margin-top: 174px;
+        } 
+    }
+}
+
+@mixin card-Style {
+    color: #2f2f2f;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    line-height: 30px;
+    padding-top: 63px;
+    padding-bottom: 21px;
+}
+.card-box {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    .left-text {
+        padding-right: 86px;
+        @include card-Style()
+        
+    }
+    .right-text {
+        padding-left: 86px;
+        @include card-Style()
+    }
+    .cc-photo {
+        background-color: #F2F2F2;
+        width: 19%;
+    }
+    .quote {
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+}
+
+.left-card {
+    width: 236px;
+}
+
+.cc-under-line {
+        border: 1px solid #34404b;
+        margin-bottom: 15px;
+    }
+.four-d {
+    margin-right: 55px;
+    padding-bottom: 43px;
+    margin-top: 113px;
+    img {
+        margin-left: auto;
+        justify-content: initial;
+        display: flex;
+    }
+}
+
+.amit-image {
+    margin-top: 174px;
+    margin-left: 50px;
+    width: 70%;
+}
+.right-cont {
+    width: 557px;
+    margin: 38px 20px 32px 9px;
+    .content-ccdsa,
+    .soft {
+        line-height: 35px;
+        letter-spacing: .9px;
+        font-size: 20px;
+        margin-right: 14%;
+        font-weight: 300;
+        padding-bottom: 20px;
+    } 
+    .found {
+        font-size: 20px;
+        justify-content: space-between;
+    }  
+}
+
+.flex {
+    display: flex;
+}
+
+.testimonials {
+    background-color: #f4f6f8;
+}

@@ -1,0 +1,99 @@
+$padding : 24px;
+@mixin flexCenter ($max-width) {
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $padding;
+    padding-right: $padding;
+    width: 100%;
+    
+}
+@mixin padding-t-l($top,$bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+@mixin width($width) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $width;
+}
+.header-nav {
+   @include flexCenter(1200px);
+    span {
+        color: #34404b;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .l-align {
+        @include padding-t-l(10px,10px);
+     }
+    // @media #{$information-phone} {
+    //     padding-left: 40px;
+    //     padding-right: 40px;
+    // }
+}
+
+
+.nav-container  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .r-align {
+       @include padding-t-l(10px,10px);
+    }
+} 
+
+.contact-l , .logo1{
+    margin-right: 10px;
+}
+
+.login , button {
+    margin-right: 25px;
+    padding: 7px 0px 7px 0px;
+}
+.r-align {
+    button {
+            border: 1px solid #ff5912;
+            border-radius: 5px;
+            padding: 6px 18px 7px 26px;
+            background-color: white;
+    }
+}
+
+.conainer {
+    .hr{
+        border-bottom: 1px solid gray;
+       
+    }
+}
+.logo-cont {
+    display: flex;
+}
+
+.nav-menu {
+    color: #34404b;
+    display: flex;
+    justify-content: space-between;
+    width: 370px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+@mixin under-line($color,$background){
+    color: $color;
+    &:after {
+        display: block;
+        content: "";
+        width: 20px;
+        background: $background;
+        height: 5px;
+        margin-top: 5px;
+        border-radius: 10px;
+    }
+
+} 
+.under-line {
+    @include under-line(#ff5912,#ff5912);
+    
+}

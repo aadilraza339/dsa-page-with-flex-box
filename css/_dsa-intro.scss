@@ -11,6 +11,9 @@
             font-size: 42px;
             font-weight: 500;
             line-height: 53px;
+            @media #{$Desktop-width}{
+                font-size: 31px;
+            }
         }
         p {
             color: #34404b;
@@ -20,19 +23,28 @@
             line-height: 36px;
             padding-top: 15px;
         }
+        @media #{$Desktop-width}{
+            padding-top: 34px;
+            font-size: 31px;
+        }
     }
 }
 
 .banner-button {
     margin-top: 57px;
+    margin-left: 15px;
     color: #ffffff;
     font-size: 18px;
     font-weight: 400;
     line-height: 48px;
-    background-color: #fc4111;
+    background: #fc4111;
     padding: 0px 56px;
+    border: none;
 }
+button:focus { outline: none; }
+
 .new-paper {
+    margin-top: 20px;
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;

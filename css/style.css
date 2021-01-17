@@ -23,12 +23,18 @@
 }
 
 .header-nav .l-align {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 480px) {
   .header-nav .l-align {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-nav .l-align .dsa-logo {
     width: 100%;
   }
 }
@@ -45,7 +51,7 @@
 }
 
 .nav-container .r-align {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
@@ -84,7 +90,7 @@
 }
 
 .conainer .hr {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .logo-cont {
@@ -145,12 +151,18 @@
 }
 
 .header-nav .l-align {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 480px) {
   .header-nav .l-align {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-nav .l-align .dsa-logo {
     width: 100%;
   }
 }
@@ -167,7 +179,7 @@
 }
 
 .nav-container .r-align {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
@@ -206,7 +218,7 @@
 }
 
 .conainer .hr {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .logo-cont {
@@ -271,6 +283,12 @@
   line-height: 53px;
 }
 
+@media only screen and (max-width: 480px) {
+  .cont-center .dsa-info span {
+    font-size: 31px;
+  }
+}
+
 .cont-center .dsa-info p {
   color: #34404b;
   font-size: 24px;
@@ -280,17 +298,31 @@
   padding-top: 15px;
 }
 
+@media only screen and (max-width: 480px) {
+  .cont-center .dsa-info {
+    padding-top: 34px;
+    font-size: 31px;
+  }
+}
+
 .banner-button {
   margin-top: 57px;
+  margin-left: 15px;
   color: #ffffff;
   font-size: 18px;
   font-weight: 400;
   line-height: 48px;
-  background-color: #fc4111;
+  background: #fc4111;
   padding: 0px 56px;
+  border: none;
+}
+
+button:focus {
+  outline: none;
 }
 
 .new-paper {
+  margin-top: 20px;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
@@ -318,12 +350,18 @@
 }
 
 .header-nav .l-align {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 480px) {
   .header-nav .l-align {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-nav .l-align .dsa-logo {
     width: 100%;
   }
 }
@@ -340,7 +378,7 @@
 }
 
 .nav-container .r-align {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
@@ -379,7 +417,7 @@
 }
 
 .conainer .hr {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .logo-cont {
@@ -500,7 +538,7 @@
   padding-bottom: 36px;
   color: #2f2f2f;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.6px;
   line-height: 36px;
 }
@@ -512,6 +550,14 @@
   font-size: 46px;
   font-weight: 400;
   text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .heading {
+    font-size: 34px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .header-nav {
@@ -530,12 +576,18 @@
 }
 
 .header-nav .l-align {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 480px) {
   .header-nav .l-align {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-nav .l-align .dsa-logo {
     width: 100%;
   }
 }
@@ -552,7 +604,7 @@
 }
 
 .nav-container .r-align {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
@@ -591,7 +643,7 @@
 }
 
 .conainer .hr {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .logo-cont {
@@ -671,7 +723,7 @@
 
 @media only screen and (max-width: 480px) {
   .enrol ul {
-    width: 308px;
+    width: 266px;
     font-size: 14px;
     margin-left: initial;
   }
@@ -700,7 +752,7 @@
 .enrol .pera > p {
   color: #2f2f2f;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.6px;
   line-height: 36px;
 }
@@ -742,7 +794,7 @@
 .row .r-align .p1 {
   color: #34404b;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.6px;
   line-height: 30px;
 }
@@ -840,7 +892,7 @@ p.red-p {
 
 @media only screen and (max-width: 480px) {
   .allow-card {
-    width: 41.5% !important;
+    width: 70% !important;
   }
 }
 
@@ -853,7 +905,7 @@ p.red-p {
 .lorem-t {
   color: #2f2f2f;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.6px;
   line-height: 36px;
   text-align: center;
@@ -947,10 +999,11 @@ p.red-p {
 
 .left-card {
   width: 236px;
+  opacity: 0.3;
 }
 
 .cc-under-line {
-  border: 1px solid #34404b;
+  border: 1px solid #888b8e;
   margin-bottom: 15px;
 }
 
@@ -968,6 +1021,16 @@ p.red-p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.four-r {
+  margin-right: 0px;
+  margin-left: 55px;
+}
+
+.four-r img {
+  margin-right: auto;
+  margin-left: 0px;
 }
 
 .amit-image {
@@ -1015,12 +1078,13 @@ p.red-p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-weight: 100;
 }
 
 @media only screen and (max-width: 480px) {
   .right-cont {
     width: 100%;
-    margin: 38px 2px 50px 34px;
+    margin: 20px 2px 50px 34px;
   }
 }
 
@@ -1055,7 +1119,9 @@ p.red-p {
   width: 255px;
   margin: 38px 21.69px 28px 21.69px;
   height: 424px;
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .card .card-align {
@@ -1066,6 +1132,7 @@ p.red-p {
 .card h3 {
   color: #4E4D4D;
   padding-top: 48px;
+  font-weight: 400;
 }
 
 .card p {
@@ -1090,6 +1157,14 @@ p.red-p {
   width: 163px;
 }
 
+.card .tag {
+  font-weight: 300;
+}
+
+.card .card-dots {
+  padding-top: 4px;
+}
+
 .box {
   background: -webkit-gradient(linear, left top, right top, color-stop(55%, #f7f7f7), color-stop(45%, #ffffff));
   background: linear-gradient(to right, #f7f7f7 55%, #ffffff 45%);
@@ -1101,6 +1176,7 @@ p.red-p {
 }
 
 .social-media h3 {
+  font-weight: 100;
   padding-top: 30px;
 }
 

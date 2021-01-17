@@ -17,7 +17,7 @@
             
         }
         @media #{$Desktop-width}{
-            width: 308px;
+            width: 266px;
             font-size: 14px;
             margin-left: initial;
         }
@@ -39,7 +39,7 @@
         > p {
             color: #2f2f2f;
             font-size: 20px;
-            font-weight: 400;
+            font-weight: 300;
             letter-spacing: 0.6px;
             line-height: 36px;
         }
@@ -70,7 +70,7 @@
         .p1 {
             color: #34404b;
             font-size: 20px;
-            font-weight: 400;
+            font-weight: 300;
             letter-spacing: 0.6px;
             line-height: 30px;
             @media #{$Desktop-width}{
@@ -145,7 +145,7 @@ p.red-p {
 .allow-card {
     width: 34.5% !important;
     @media #{$Desktop-width}{
-        width: 41.5% !important;
+        width: 70% !important;
     }
 }
 
@@ -156,7 +156,7 @@ p.red-p {
 .lorem-t {
     color: #2f2f2f;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0.6px;
     line-height: 36px;
     text-align: center;
@@ -226,10 +226,11 @@ p.red-p {
 
 .left-card {
     width: 236px;
+    opacity: 0.3;
 }
 
 .cc-under-line {
-        border: 1px solid #34404b;
+        border: 1px solid #888b8e;;
         margin-bottom: 15px;
     }
 .four-d {
@@ -242,7 +243,14 @@ p.red-p {
         display: flex;
     }
 }
-
+.four-r {
+    margin-right: 0px;
+    margin-left: 55px;
+    img {
+        margin-right: auto;
+        margin-left: 0px;
+    }
+}
 .amit-image {
     margin-top: 174px;
     margin-left: 50px;
@@ -278,10 +286,11 @@ p.red-p {
     .found {
         font-size: 20px;
         justify-content: space-between;
+        font-weight: 100;
     }
     @media #{$Desktop-width}{
         width: 100%;
-        margin: 38px 2px 50px 34px;
+        margin: 20px 2px 50px 34px;
     }  
 }
 

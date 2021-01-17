@@ -25,15 +25,16 @@ $padding : 24px;
         font-weight: 400;
     }
     .l-align {
-        @include padding-t-l(10px,10px);
+        @include padding-t-l(20px,10px);
         @media #{$Desktop-width}{
             width: 100%;
         }
+        .dsa-logo {
+            @media #{$Desktop-width}{
+                width: 100%;
+            }
+        }
      }
-    // @media #{$information-phone} {
-    //     padding-left: 40px;
-    //     padding-right: 40px;
-    // }
 }
 
 
@@ -42,7 +43,7 @@ $padding : 24px;
     justify-content: space-between;
     flex-wrap: wrap;
     .r-align {
-       @include padding-t-l(10px,10px);
+       @include padding-t-l(20px,10px);
     }
 } 
 
@@ -74,7 +75,7 @@ $padding : 24px;
 
 .conainer {
     .hr{
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid #f2f2f2;
        
     }
 }

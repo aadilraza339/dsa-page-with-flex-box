@@ -13,7 +13,7 @@
     width: 255px;
     margin: 38px 21.69px 28px 21.69px;
     height: 424px;
-    display: inline-block;
+    display: inline-flex;
     .card-align {
         margin-left: 43px;
         margin-top: 43px;
@@ -21,6 +21,7 @@
     h3 {
         color: #4E4D4D;
         padding-top: 48px;
+        font-weight: 400;
     }
     p {
         color: #4E4D4D;
@@ -40,6 +41,12 @@
     }
     .width {
         width: 163px;
+    }
+    .tag{
+        font-weight: 300;
+    }
+    .card-dots {
+        padding-top: 4px;
     }
 }
 .box {
